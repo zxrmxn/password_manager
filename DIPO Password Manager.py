@@ -7,6 +7,7 @@ import os
 
 PASSWORDS_FILE = "C:/Password Manager/saved_password/passwords.json"
 
+# create a json file to store passwords and load that file   
 def load_passwords():
     if not os.path.isfile(PASSWORDS_FILE):
         os.makedirs(os.path.dirname(PASSWORDS_FILE), exist_ok=True)
@@ -94,7 +95,6 @@ def save_and_exit():
     save_passwords(passwords)
     root.destroy()
 
-
 passwords = load_passwords()
 
 root = tk.Tk()
@@ -146,7 +146,6 @@ clear_button.grid(row=4, column=2, columnspan=2, padx=10, pady=5, sticky=tk.W+tk
 # Password List
 password_list = tk.Text(root, width=50, height=10)
 password_list.grid(row=5, column=0, columnspan=3, padx=10, pady=5, sticky=tk.W+tk.E)
-
 
 # Load initial passwords in the list
 list_passwords()
