@@ -208,7 +208,7 @@ def login(root):
             passwords = load_passwords()
 
             root = tk.Tk()
-            root.title("DIPO Password Manager")
+            root.title("Password Manager")
             root.iconbitmap('C:\Password Manager/favicon.ico')  # Set the program icon
             root.resizable(False, False)
 
@@ -300,7 +300,7 @@ def clear_login_form():
 users = load_data(USERS_FILE)
 
 root = tk.Tk()
-root.title("DIPO Password Manager")
+root.title("Password Manager")
 root.iconbitmap('C:\Password Manager/favicon.ico')  # Set the program icon
 root.resizable(False, False)
 
